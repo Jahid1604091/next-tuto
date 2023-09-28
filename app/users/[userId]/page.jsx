@@ -16,6 +16,7 @@ export default async function UserDeatils({ params: { userId } }) {
       <h1 className="text-xl underline">User Details of {userData.username}</h1>
       <div className="p-5">
         <h2>FullName : {userData.name}</h2>
+      
         <h2> Email : {userData.email}</h2>
 
         <Suspense fallback={<div>Loading...</div>}>
